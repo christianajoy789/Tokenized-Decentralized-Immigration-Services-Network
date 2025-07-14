@@ -1,0 +1,24 @@
+[project]
+name = 'Tokenized-Decentralized-Immigration-Services-Network'
+description = ''
+authors = []
+telemetry = true
+cache_dir = './.cache'
+requirements = []
+[contracts.documentation-assistance]
+path = 'contracts/documentation-assistance.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.family-reunification]
+path = 'contracts/family-reunification.clar'
+clarity_version = 2
+epoch = 2.5
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
